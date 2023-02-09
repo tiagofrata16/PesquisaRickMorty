@@ -1,0 +1,141 @@
+/*GERAL*/
+
+* {
+    padding: 0;
+    margin: 0; 
+    font-family: "Ubuntu", sans-serif;
+}
+
+body {
+    background: linear-gradient(180deg, #594cee 0%, #8dd0f5 100%); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.hide, .hide2, .hide3, .hide4, .hide5 {
+    display: none;
+} 
+
+.container {
+    background-color: #5c54ed;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 9px; 
+    padding: 2rem; 
+    color: #fdfdfd;
+    border-radius: 1rem;
+    min-width: 400px;
+    max-width: 500px;
+}
+
+.form h3 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.form-input-container {
+    display: flex;
+}
+
+.form input {
+    padding: 0.8rem;
+    border: none;
+    flex: 1; 
+    border-radius: 4px;
+}
+
+.form button {
+    padding: 0.8rem;
+    min-width: 50px;
+    margin-left: 8px;
+    background-color: #8dd0f5;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.sugestoesAparente {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    border-top: 1px solid #fff;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+.sugestoesAparente button {
+    min-width: 150px;
+    padding: 0.6rem;
+    border-radius: 10rem;
+    border: none;
+    background-color: #8dd0f5;
+    color: #000000;
+    cursor: pointer;
+    font-weight: 600;
+    opacity: 0.8;/*transparencia do button*/
+    transition: 0.8s;/*ocorre ao atualizar a pagina*/
+}
+
+.loading-visivel {
+    display: flex;
+    justify-content: center;
+} 
+
+.loading {
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    display: block;
+    margin-top: 2rem;
+    border: 12px solid gray;
+    border-top: 12px solid transparent;
+    border-radius: 50%;
+
+    animation: loading 1s linear infinite;
+}
+/*acao do loading de girar*/
+@keyframes loading{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/*CHARACTER*/
+
+#character-data {
+    border-top: 1px solid #fff;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    text-align: center;
+}
+
+#character-data h1 {
+    font-weight: bold;
+}
+
+#character-data img {
+    height: 13rem;
+}
+
+#character-data h2 {
+    display: flex;
+    margin: 0.6rem;
+    font-size: 1.5rem;
+}
+
+.mensagem-visivel {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+#mensagem h1 {
+    font-weight: none;
+    font-size: 1.5rem;
+}
